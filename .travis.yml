@@ -1,3 +1,12 @@
+sudo: false
 language: ruby
+cache: bundler
+before_script:
+  - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc' # skip installing docs for gems
+before_install:
+  - gem install bundler -v ">= 1.7.0" # Minimum version of bundler required
+script: 'bundle exec rspec'
 rvm:
-  - 2.1.0
+  - 2.1
+  - 2.2.2
+  - 2.3.0

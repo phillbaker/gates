@@ -1,5 +1,8 @@
 # Gates
 
+[![Build
+Status](https://travis-ci.org/phillbaker/gates.png?branch=master)](https://travis-ci.org/phillbaker/gates)
+
 This is an implementation of the ideas expressed in this post about Stripe's public API versioning, [Move fast, don't break your API](http://amberonrails.com/move-fast-dont-break-your-api/). The goal is to separate layers of request and response compatibility from the API logic, with two important drivers:
  * let your customers migrate API versions at their convenience, minimize the pain of upgrades when they do upgrade.
  * make it feasible to fix backward incompatible API schema mistakes (they will happen).
